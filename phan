@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT Motorcycle Rental Phuket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            background-image: url('motorcycle-rental.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .services, .rental-plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service, .rental-plan {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .service img, .rental-plan img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .service h3, .rental-plan h3 {
+            margin: 10px 0;
+        }
+
+        .rental-plan p {
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to MT Motorcycle Rental Phuket</h1>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#rental-plans">Rental Plans</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Ride the Roads of Phuket in Style</h1>
+    </div>
+
+    <div class="container">
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="motorbike.jpg" alt="Motorbike Rental">
+                <h3>Motorbike Rental</h3>
+                <p>Choose from a variety of motorcycles for your journey in Phuket.</p>
+            </div>
+            <div class="service">
+                <img src="scooter.jpg" alt="Scooter Rental">
+                <h3>Scooter Rental</h3>
+                <p>Light and easy to ride, perfect for quick trips around town.</p>
+            </div>
+            <div class="service">
+                <img src="car.jpg" alt="Car Rental">
+                <h3>Car Rental</h3>
+                <p>Need more space? Our car rental options are just for you.</p>
+            </div>
+        </section>
+
+        <section id="rental-plans" class="rental-plans">
+            <h2>Rental Plans</h2>
+            <div class="rental-plan">
+                <img src="daily-plan.jpg" alt="Daily Plan">
+                <h3>Daily Plan</h3>
+                <p>Rent motorcycles and scooters on a daily basis at affordable rates.</p>
+            </div>
+            <div class="rental-plan">
+                <img src="weekly-plan.jpg" alt="Weekly Plan">
+                <h3>Weekly Plan</h3>
+                <p>Enjoy discounted weekly rates for longer stays.</p>
+            </div>
+            <div class="rental-plan">
+                <img src="monthly-plan.jpg" alt="Monthly Plan">
+                <h3>Monthly Plan</h3>
+                <p>Best value for long-term rentals with unbeatable monthly rates.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="/submit" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>MT Motorcycle Rental Phuket &copy; 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
